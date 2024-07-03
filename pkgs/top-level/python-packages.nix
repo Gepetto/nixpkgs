@@ -5743,6 +5743,11 @@ self: super: with self; {
     python3Packages = self;
   });
 
+  hpp-environments = toPythonModule (pkgs.hpp-environments.override {
+    pythonSupport = true;
+    python3Packages = self;
+  });
+
   hpp-fcl = toPythonModule (pkgs.hpp-fcl.override {
     pythonSupport = true;
     python3Packages = self;
