@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation {
   pname = "collada-dom";
-  version = "unstable-2020-01-03";
+  version = "unstable-2024-07-23";
 
   src = fetchFromGitHub {
-    owner = "rdiankov";
+    owner = "gepetto";
     repo = "collada-dom";
-    rev = "c1e20b7d6ff806237030fe82f126cb86d661f063";
-    sha256 = "sha256-A1ne/D6S0shwCzb9spd1MoSt/238HWA8dvgd+DC9cXc=";
+    rev = "ec585debce96e4c9ffec978eec6f794218f67bbe";
+    sha256 = "sha256-nPh0z3RKCJUG+BU4kNqCLUXoqxmMjOKAkMWjq7Kvolk=";
   };
 
   postInstall = ''
@@ -27,9 +27,9 @@ stdenv.mkDerivation {
 
   meta = with lib; {
     description = "Lightweight version of collada-dom, with only the parser.";
-    homepage = "https://github.com/rdiankov/collada-dom";
+    homepage = "https://github.com/gepetto/collada-dom";
     license = licenses.mit;
-    maintainers = with maintainers; [ marius851000 ];
+    maintainers = with maintainers; [ nim65s ];
     platforms = platforms.all;
   };
 }
