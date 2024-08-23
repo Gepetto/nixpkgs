@@ -4961,6 +4961,8 @@ self: super: with self; {
 
   georss-wa-dfes-client = callPackage ../development/python-modules/georss-wa-dfes-client { };
 
+  gepetto-viewer-corba = callPackage ../development/python-modules/gepetto-viewer-corba { };
+
   gepetto-viewer = callPackage ../development/python-modules/gepetto-viewer { };
 
   gerbonara = callPackage ../development/python-modules/gerbonara { };
