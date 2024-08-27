@@ -17,7 +17,7 @@
 , lz4
 , mygui
 , openal
-, openscenegraph
+, osg-dae
 , recastnavigation
 , unshield
 , yaml-cpp
@@ -26,7 +26,7 @@
 let
   GL = "GLVND"; # or "LEGACY";
 
-  osg' = (openscenegraph.override { colladaSupport = true; }).overrideDerivation (old: {
+  osg' = osg-dae.overrideDerivation (old: {
     patches = [
       (fetchpatch {
         # Darwin: Without this patch, OSG won't build osgdb_png.so, which is required by OpenMW.
