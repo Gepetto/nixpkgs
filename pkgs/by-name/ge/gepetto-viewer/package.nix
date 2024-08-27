@@ -10,7 +10,7 @@
   jrl-cmakemodules,
   libsForQt5,
   makeWrapper,
-  openscenegraph,
+  osg-dae,
   osgqt,
   pkg-config,
   python3Packages,
@@ -71,7 +71,7 @@ let
 
     propagatedBuildInputs = [
       jrl-cmakemodules
-      openscenegraph
+      osg-dae
       osgqt
       qgv
     ];
