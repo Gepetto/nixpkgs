@@ -4982,7 +4982,11 @@ self: super: with self; {
 
   georss-wa-dfes-client = callPackage ../development/python-modules/georss-wa-dfes-client { };
 
-  gepetto-gui = toPythonModule (gepetto-viewer.withPlugins [ gepetto-viewer-corba ]);
+  gepetto-gui = toPythonModule (gepetto-viewer.withPlugins [
+    gepetto-viewer-corba
+    hpp-gepetto-viewer
+    hpp-gui
+  ]);
 
   gepetto-viewer-corba = toPythonModule (pkgs.gepetto-viewer-corba.override { python3Packages = self; });
 
