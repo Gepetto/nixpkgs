@@ -5786,6 +5786,8 @@ self: super: with self; {
     python3Packages = self;
   });
 
+  hpp-task-sequencing = toPythonModule (pkgs.hpp-task-sequencing.override { python3Packages = self; });
+
   hpp-tutorial = toPythonModule (pkgs.hpp-tutorial.override { python3Packages = self; });
 
   hpp-universal-robot = toPythonModule (pkgs.hpp-universal-robot.override {
