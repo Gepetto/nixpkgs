@@ -13,7 +13,6 @@
   runCommand,
   stdenv,
 }:
-
 let
   hpp-corbaserver = stdenv.mkDerivation (finalAttrs: {
     pname = "hpp-corbaserver";

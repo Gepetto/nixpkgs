@@ -20430,6 +20430,11 @@ with pkgs;
 
   hound = callPackage ../development/tools/misc/hound { };
 
+  hppcorbaserver = with python3Packages; hpp-corbaserver.withPlugins [
+    hpp-manipulation
+    hpp-manipulation-corba
+  ];
+
   hpx = callPackage ../development/libraries/hpx {
     boost = boost179;
     asio = asio.override { boost = boost179; };
