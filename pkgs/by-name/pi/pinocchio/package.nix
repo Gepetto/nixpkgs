@@ -9,6 +9,7 @@
   eigen,
   example-robot-data,
   fetchFromGitHub,
+  fetchpatch,
   hpp-fcl,
   jrl-cmakemodules,
   lib,
@@ -33,6 +34,13 @@ stdenv.mkDerivation (finalAttrs: {
   outputs = [
     "out"
     "doc"
+  ];
+
+  patches = [
+    (fetchpatch {
+      url = "https://github.com/stack-of-tasks/pinocchio/pull/2419/commits/3534b7d26e29edc9212266f4f90a86ed718a6d31.patch";
+      hash = "sha256-RzxyUmevYxoRfdqOQZ0/jUiNGTxpfVjv12N4JLMBH2k=";
+    })
   ];
 
   # test failure, ref https://github.com/stack-of-tasks/pinocchio/issues/2277
