@@ -10960,6 +10960,8 @@ with pkgs;
 
   os-prober = callPackage ../tools/misc/os-prober { };
 
+  osg-dae = openscenegraph.override { colladaSupport = true; };
+
   oshka = callPackage ../development/tools/oshka { };
 
   osl = libsForQt5.callPackage ../development/compilers/osl {
