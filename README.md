@@ -1,6 +1,19 @@
 # fork-manager
 
 This branch is managed from https://github.com/gepetto/forks
+It is based on git@github.com:gepetto/nixpkgs master
+  which is on: 0ad139a0e437 (document fork manager, 2024-09-24)
+
+It include:
+- configurable default visualizer,
+  in: 5b1de64e4d39 (Merge remote-tracking branch 'github.com/gepetto/nixpkgs/pin-default-gv' into gv, 2024-09-24)
+  which is on: 2f13bcd09494 (pinocchio: patch for configurable default visualizer, 2024-09-20)
+
+---
+
+# fork-manager
+
+This branch is managed from https://github.com/gepetto/forks
 It is based on git@github.com:NixOS/nixpkgs nixos-unstable
   which is on: 9357f4f23713 (plexRaw: 1.40.5.8921-836b34c27 -> 1.41.0.8992-8463ad060, 2024-09-21)
 
