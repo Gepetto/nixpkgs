@@ -1,3 +1,19 @@
+# fork-manager
+
+This branch is managed from https://github.com/gepetto/forks
+It is based on git@github.com:NixOS/nixpkgs nixos-unstable
+  which is on: 9357f4f23713 (plexRaw: 1.40.5.8921-836b34c27 -> 1.41.0.8992-8463ad060, 2024-09-21)
+
+It include:
+- initial HPP packaging (based on commits from
+  in: 4cbe73b154bd (hpp-task-sequencing: init at 0-unstable-2024-09-02, 2024-09-05)
+  which is on: 4cbe73b154bd (hpp-task-sequencing: init at 0-unstable-2024-09-02, 2024-09-05)
+- add collada support to gepetto-viewer (based on commits from
+  in: 8d466c0501fb (Merge remote-tracking branch 'github.com/gepetto/nixpkgs/osg-dae', 2024-09-24)
+  which is on: 0399b9d51faf (gepetto-viewer: use osg-dae, 2024-08-27)
+
+---
+
 <p align="center">
   <a href="https://nixos.org">
     <picture>
